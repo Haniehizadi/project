@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	{% load static%}
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All products-clothing website</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body style="background-color: #f6eef9;">
+	
+		  <div class="container"  style="background-color: #e9d0f3;">
+		 <div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="{% static 'images/logo.PNG'%}" width="90px" height="90"></a>
+		</div>
+		<nav>
+		<ul id="MenuItems">
+            <li><a href="">اخبار و مقالات</a></li>
+			<li><a href="account.html">حساب کاربری</a></li>
+			<li><a href="">درباره ما</a></li>
+			<li><a href="products.html">محصولات</a></li>
+			<li><a href="index.html">صفحه اصلی</a></li>
+			</ul>
+		</nav>
+			  <a href="cart.html"><img src="{% static 'images/cart-outline.png'%}" width="30px" height="30px"></a>
+			 <img src="{% static 'images/menu.png'%}" class="menu-icon" onClick="menutoggle()">
+	</div>
+	</div>	
+	<br>
+		<br>
+        <br>
+        <div class="row">
+            <div class="col-4" dir="rtl">
+                <h3 class="btn">اصول ست کردن لباس و نحوه انتخاب آن </h3>
+                <p>اصول کلی<br>
+                    ۱) همواره لباسی را بپوشید که کاملا اندازه شما باشد<br>
+                    ۲) پوشیدن لباسهای بزرگ تنها اندام شما را اغـراق آمـیـز تـر جـلوه داده و آنـها را پنهان نمیکند. <br>
+                    ۳) بیشتر سعی کنید تنها در زمانی که کمر باریکی دارید از کمر بند استفاده کنید.<br>
+                    
+                    ۴) پارچـه هـای سـنگین مانـند پـشمـی، بافـتنی و چرمی شما را سنگین وزن تر جلوه میدهند.<br>
+                    
+                    ۵) پارچه های سبک وزن مانند کتان، نخی شما را لاغر تر جلوه میدهند.<br>
+                    
+                    ۶) رنگهای تیره شما را لاغر تر و کوچک تر میکنند. <br>
+                    
+                    ۷) رنگهای روشن شما را بزرگتر و حجیم تر میکنند. <br>
+                    
+                    ۸) لباسهای بالا تنه و پایین تنه یکرنگ شما را لاغر تر جلوه میدهند. <br>
+                    
+                    ۹) لباسهای بالا تنه و پایین تنه با رنگهای متفاوت شما را بلند قد تر میکند.<br>
+                    
+                    ۱۰) لباسهای یقه بلند گردن را کوتاه تر میکند.<br>
+                    
+                    ۱۱) گردن بند کوتاه نیز گردن را کوتاه تر میکند. <br>
+                    
+                    ۱۲) روسـری کـه به سـمت پـایین آویزان شـده باشد، قـد شما را بلند تر جلوه میدهد.<br>
+                                        
+                    ۱۴) لـبـاس بـا خطوط افقی شما را چاق تـر و بـا خـطـوطعمودی شما را لاغر تر جلوه میدهـد.</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-4" dir="rtl">
+                    <h3 class="btn">بـرای لاغر تر و بلند قد تر بنظر رسیدن نکات زیر را رعایت کنید:</h3>
+                    <p>۱) لباسهای کاملا اندازه بپوشید لباسهای خیلی کوچـک و خیلی بزرگ تنها شما را چاق تر نشان میدهند.<br>
+                        ۲- لباسهای یکدشت یکرنگ بپوشید. تـرجیـحا یـکرنـگ از سر تا نوک پا. <br>
+                        ۳) از پـوشیـده لبـاسـهای با طرح برجسته و پارچـه هـای زمخت خود داری کنید. <br>
+                        ۴) لباسهای تیره رنگ با پارچه های نازک و نرم بپوشید.<br>
+                        ۵) شلوار را در ناحیه کمر بالا بیاورید نه پایین تر.<br>
+                        ۶) کراوات با پهنای متوسط پوشیده و حتما طول آن تا کمر برسد. <br>
+                        ۷) از پوشیدن لباسهای با نقش و نگار شلوغ خودداری ورزید. <br>
+                        ۸) لباس با طرح راه راه عمودی بپوشید. <br>
+                        ۹) از داشتن ملزومات بیش از حد خود داری کنید. <br>
+                        ۱۰) کفش پاشنه بلند به پا کنید.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4" dir="rtl">
+                    <h3 class="btn">برای کوتاه تر و تپل تر بنظر رسیدن نکات زیر را رعایت کنید:</h3>
+                    <p>۱) لباسهای با رنگ متفاوت بپوشید.<br>
+                        ۲) رنگهای روشن و پر رنگ بپوشید.<br>
+                        ۳) کراوات پهن تر بپوشید. <br>
+                        ۴) لباسهای چند لایه به تن کنید. <br>
+                        ۵) کفش بدون پاشنه و ظریف بپوشید. <br>
+                        ۶) شلوار تمام قد بپوشید. <br>
+                        ۷) از پوشیدن لباسهای سرتاسر یکرنگ بپرهیزید. <br>
+                        ۸) لباس با طرح راه راه عمودی و کراوات باریک نپوشید.
+                    </p>
+                </div>
+            </div>
+            <div class="small-container">
+                <br>
+                <br>
+                <br>
+                <div class="row" dir="rtl">
+                <div class="col-4">
+                   <img src="{% static 'images/9796_orig.jpg'%}" width="350px" height="380" >
+                   
+                  </div>
+                  <div class="col-4">
+                    <img src="{% static 'images/9795_orig.jpg'%}" width="350px" height="380" >
+                    
+                   </div>
+                   
+                </div>
+            </div>
+	<br>
+    <br>
+    <br>
+	<br><br><br><br><br><br><br><br>
+	<!---------------footer----------------->
+	<div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col-1">
+                <center><h3>هدف ما ارائه محصولات درجه 1<br> به سراسر ایران است</h3></center>
+                    </div>
+            <div class="footer-col-2">
+                <img src="{% static 'images/logo.PNG'%}">
+                <p>طراحی شده توسط web.ia</p>
+                    </div>
+                <div class="footer-col-3">
+                <h3>لینک های پر کاربرد</h3>
+                <ul>
+                    <li>صفحه اصلی</li>
+                    <li>فروشگاه ما</li>
+                    <li>درباره ما</li>
+                    <li>راهنمای خرید و پیگیری سفارش</li>
+    
+    
+                    </ul>
+                    </div>
+                <div class="footer-col-4">
+                <h3>ما را در شبکه های اجتماعی دنبال کنید</h3>
+                <ul>
+                    <li>اینستاگرام</li>
+                    <li>تلگرام</li>
+                    <li>واتس اپ</li>
+    
+    
+                    </ul>
+                    </div>
+            
+        </div>
+        <!__________js for toggle menu-------------->
+        <script>
+        var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px"){
+                    MenuItems.style.maxHeight="200px"
+                }
+                else
+                    {
+                        MenuItems.style.maxHeight="0px";
+                    }
+            }
+        </script>
+        
+        
+    </body>
+    </html>
+    

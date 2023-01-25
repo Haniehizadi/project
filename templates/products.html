@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+	{% load static%}
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All products-clothing website</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body style="background-color: #f7e4ff;">
+	
+		  <div class="container"  style="background-color: #e9d0f3;">
+		 <div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="{% static 'images/logo.PNG'%}" width="90px" height="90"></a>
+		</div>
+		<nav>
+		<ul id="MenuItems">
+			<li><a href="">اخبار و مقالات</a></li>
+			<li><a href="account.html">حساب کاربری</a></li>
+			<li><a href="">درباره ما</a></li>
+			<li><a href="products.html">محصولات</a></li>
+			<li><a href="index.html">صفحه اصلی</a></li>
+			</ul>
+		</nav>
+			  <a href="cart.html"><img src="{% static 'images/cart-outline.png'%}" width="30px" height="30px"></a>
+			 <img src="{% static 'images/menu.png'%}" class="menu-icon" onClick="menutoggle()">
+	</div>
+	</div>	
+	<br>
+		<br>
+	<div class="small-container">
+		<div class="row row-2">
+			<select >
+			<option>مرتب سازی پیشفرض</option>
+			<option>ارزان ترین</option>
+			<option>پربازدیدترین</option>
+			<option>بیشترین امتیاز</option>
+			<option>پرفروش ترین</option>
+			</select>
+			<h2 class="btn2">همه محصولات</h2>
+		</div>
+		
+   		<div class="row" dir="rtl">
+			
+			<div class="col-4">
+				<a href="product-detail.html"><img src="{% static 'images/category6.jpg'%}" width="250px" height="380" ></a>
+				<a href="product-detail.html"><h4 >مانتو مدل دلسا</h4></a>
+				<div class="rating">
+					<span style="font-size:20px;">&#9733;</span>
+					<span style="font-size:20px;">&#9733;</span>
+					<span style="font-size:20px;">&#9733;</span>
+					<span style="font-size:20px;">&#9733;</span>
+					<span style="font-size:20px;">&#9734;</span>
+			</div>
+				<p>390000 تومان</p>
+		  </div>
+		  <div class="col-4">
+			<a href="productdetail2.html"><img src="{% static 'images/category100.jpg'%}" width="250px" height="380" ></a>
+			<a href="productdetail2.html"><h4> کاپشن مدل ورونیکا</h4></a>
+			<div class="rating">
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+                <span style="font-size:20px;">&#9734;</span>
+		</div>
+			<p>500000 تومان</p>
+		  </div>
+		  <div class="col-4">
+			<a href="productdetail1.html"><img src="{% static 'images/category11.jpg'%}" width="250px" height="380" ></a>
+			<a href="productdetail1.html"><h4 >کت چرم</h4></a>
+			<div class="rating">
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+                <span style="font-size:20px;">&#9734;</span>
+		</div>
+			<p>1200000 تومان</p>
+		  </div>
+		</div>
+		<br>
+		<br>
+		<div class="row" dir="rtl">
+		<div class="col-4">
+			<a href="product-detail.html"><img src="{% static 'images/category4.jpg'%}" width="250px" height="380" ></a>
+			<a href="product-detail.html"><h4 >کت مدل کلاسیک</h4></a>
+			<div class="rating">
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+                <span style="font-size:20px;">&#9734;</span>
+		</div>
+			<p>300000 تومان</p>
+		  </div>
+			<div class="col-4">
+		    	<a href="product-detail.html"><img src="{% static 'images/category5.jpg'%}" width="250px" height="380" ></a>
+				<a href="product-detail.html"><h4 >کت مدل آروشا</h4></a>
+			<div class="rating">
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+                <span style="font-size:20px;">&#9734;</span>
+		</div>
+			<p>310000 تومان</p>
+		  </div>
+		  <div class="col-4">
+			<a href="product-detail.html"><img src="{% static 'images/indexx.jpg'%}" width="250px" height="380" ></a>
+			<a href="product-detail.html"><h4 >کاپشن مدل ساینا</h4></a>
+			<div class="rating">
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+				<span style="font-size:20px;">&#9733;</span>
+                <span style="font-size:20px;">&#9734;</span>
+		</div>
+			<p>390000 تومان</p>
+		  </div>
+		</div>
+		<br>
+		<br>
+		<div class="page-btn" dir="rtl">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+    	<span>&#8594;</span>
+		</div>
+	</div>
+	<br>
+	
+	<!---------------footer----------------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+			<div class="footer-col-1">
+				<center><h3>هدف ما ارائه محصولات درجه 1<br> به سراسر ایران است</h3></center>
+					</div>
+			<div class="footer-col-2">
+				<img src="{% static 'images/logo.PNG'%}">
+				<p>طراحی شده توسط web.ia</p>
+					</div>
+				<div class="footer-col-3">
+				<h3>لینک های پر کاربرد</h3>
+				<ul>
+					<li>صفحه اصلی</li>
+					<li>فروشگاه ما</li>
+					<li>درباره ما</li>
+					<li>راهنمای خرید و پیگیری سفارش</li>
+	
+	
+					</ul>
+					</div>
+				<div class="footer-col-4">
+				<h3>ما را در شبکه های اجتماعی دنبال کنید</h3>
+				<ul>
+					<li>اینستاگرام</li>
+					<li>تلگرام</li>
+					<li>واتس اپ</li>
+	
+	
+					</ul>
+					</div>
+			
+		</div>
+		<!__________js for toggle menu-------------->
+		<script>
+		var MenuItems=document.getElementById("MenuItems");
+			MenuItems.style.maxHeight="0px";
+			function menutoggle(){
+				if(MenuItems.style.maxHeight=="0px"){
+					MenuItems.style.maxHeight="200px"
+				}
+				else
+					{
+						MenuItems.style.maxHeight="0px";
+					}
+			}
+		</script>
+		
+		
+	</body>
+	</html>
+	

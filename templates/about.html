@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	{% load static%}
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All products-clothing website</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body style="background-color: #f6eef9;">
+	
+		  <div class="container"  style="background-color: #e9d0f3;">
+		 <div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="{% static 'images/logo.PNG'%}" width="90px" height="90"></a>
+		</div>
+		<nav>
+		<ul id="MenuItems">
+            <li><a href="">اخبار و مقالات</a></li>
+			<li><a href="account.html">حساب کاربری</a></li>
+			<li><a href="">درباره ما</a></li>
+			<li><a href="products.html">محصولات</a></li>
+			<li><a href="index.html">صفحه اصلی</a></li>
+			</ul>
+		</nav>
+			  <a href="cart.html"><img src="{% static 'images/cart-outline.png'%}" width="30px" height="30px"></a>
+			 <img src="{% static 'images/menu.png'%}" class="menu-icon" onClick="menutoggle()">
+	</div>
+	</div>	
+	<br>
+		<br>
+
+    <center>
+        <div class="row">
+        <div class="col-4">
+        <p>تیم ما قصد دارد با ساخت یک وبسایت فروشگاھی و طراحی ابزاری مناسب به مشتریان جھت خرید لباس مناسب کمک کند. فواید و کارایی ھای سیستم : ایجاد یک پنل سفارش گیری آسان برای مشتری . ارایه پیشنھادات از طرف سیستم به مشتری جھت انتخاب رنگ ٬ سایز و ... مناسب و ایجاد ھماھنگی بین محصولات خریداری شده. با توجه به سابقه جستجو مشتری در بین محصولات ٬ محصولات مرتبط و ھماھنگ با سلیقه او به او پیشنھاد داده میشود و او میتواند آن ھا را خریداری کند که این باعث سود بیشتر در فروش محصولات میشود. اخبار روز دنیا راجع به مد ولباس از طریق منابع معتبر در اختیار مشتریان قرار میگیرد و به طور پیوسته به روز رسانی میشود. امکان پیگیری سفارش از طریق پنل کاربری٬ به روز رسانی موجودی انبار به صورت لحظه ای توسط سیستم امکان پذیر است. به علت کوتاه بودن زمان بندی پروژه٬ از متدولوژی اسکرام برای این سیستم استفاده شده تا ھمچنین با برگزاری جلسات روزانه٬ پیشرفت مناسبی در ساخت سیستم ایجاد شود و پس از ارائه نسخه اولیه٬ بھبود ھا
+            در نسخه ھای بعد حاصل شود.</p>
+        </div>
+        </div>
+</center>
+	<br>
+    <br>
+    <br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<!---------------footer----------------->
+	<div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col-1">
+                <center><h3>هدف ما ارائه محصولات درجه 1<br> به سراسر ایران است</h3></center>
+                    </div>
+            <div class="footer-col-2">
+                <img src="{% static 'images/logo.PNG'%}">
+                <p>طراحی شده توسط web.ia</p>
+                    </div>
+                <div class="footer-col-3">
+                <h3>لینک های پر کاربرد</h3>
+                <ul>
+                    <li>صفحه اصلی</li>
+                    <li>فروشگاه ما</li>
+                    <li>درباره ما</li>
+                    <li>راهنمای خرید و پیگیری سفارش</li>
+    
+    
+                    </ul>
+                    </div>
+                <div class="footer-col-4">
+                <h3>ما را در شبکه های اجتماعی دنبال کنید</h3>
+                <ul>
+                    <li>اینستاگرام</li>
+                    <li>تلگرام</li>
+                    <li>واتس اپ</li>
+    
+    
+                    </ul>
+                    </div>
+            
+        </div>
+        <!__________js for toggle menu-------------->
+        <script>
+        var MenuItems=document.getElementById("MenuItems");
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight=="0px"){
+                    MenuItems.style.maxHeight="200px"
+                }
+                else
+                    {
+                        MenuItems.style.maxHeight="0px";
+                    }
+            }
+        </script>
+        
+        
+    </body>
+    </html>
+    

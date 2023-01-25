@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+	{% load static%}
+<head >
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All products-clothing website</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body style="background-color:  #f7e4ff;">
+	
+		  <div class="container" style="background-color: #e9d0f3;">
+		 <div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="{% static 'images/logo.PNG'%}" width="90px" height="90"></a>
+		</div>
+		<nav >
+		<ul id="MenuItems">
+			<li><a href="">اخبار و مقالات</a></li>
+			<li><a href="account.html">حساب کاربری</a></li>
+			<li><a href="">درباره ما</a></li>
+			<li><a href="products.html">محصولات</a></li>
+			<li><a href="index.html">صفحه اصلی</a></li>
+			</ul>
+		</nav>
+			  <a href="cart.html"><img src="{% static 'images/cart-outline.png'%}" width="30px" height="30px"></a>
+			 <img src="{% static 'images/menu.png'%}" class="menu-icon" onClick="menutoggle()">
+	</div>
+	</div>	
+	<!-----------cart items details-------------->
+	<div class="small-container cart-page">
+	<table> 
+		<tr>
+		    <th>محصولات</th>
+			<th>تعداد</th>
+			<th>جمع کل</th>
+		</tr>
+		<tr>
+		    <td>
+			<div class="cart-info">
+				<img src="{% static 'images/category5.jpg'%}" width="20%">
+				<div>
+				<p>مانتو مدل ساینا</p>
+					<small>قیمت:500 هزار تومان</small>
+					<br>
+					<a href="">حذف</a>
+				</div>
+			</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>500هزار تومان</td>
+		</tr>
+		<tr>
+		    <td>
+			<div class="cart-info">
+				<img src="{% static 'images/category3.jpg'%}" width="20%">
+				<div>
+				<p>کیف دستی</p>
+					<small>قیمت:120 هزار تومان</small>
+					<br>
+					<a href="">حذف</a>
+				</div>
+			</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>120هزار تومان</td>
+		</tr>
+		<tr>
+		    <td>
+			<div class="cart-info">
+				<img src="{% static 'images/category2.jpg'%}" width="20%">
+				<div>
+				<p>کاپشن مدل دلسا</p>
+					<small>قیمت:400 هزار تومان</small>
+					<br>
+					<a href="">حذف</a>
+				</div>
+			</div>
+			</td>
+			<td><input type="number" value="1"></td>
+			<td>400هزار تومان</td>
+		</tr>
+		</table>
+		
+		
+		
+		
+		<div class="total-price">
+		
+			<table>
+			    <tr>
+				    <td>جمع کل</td>
+					<td>1200 هزار تومان</td>
+				</tr>
+				<tr>
+				    <td>هزینه پست</td>
+					<td>30 هزار تومان</td>
+				</tr>
+				<tr>
+				    <td>کل مبلغ پرداختی</td>
+					<td>1230 هزار تومان</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<!---------------footer----------------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+			<div class="footer-col-1">
+				<center><h3>هدف ما ارائه محصولات درجه 1<br> به سراسر ایران است</h3></center>
+					</div>
+			<div class="footer-col-2">
+				<img src="{% static 'images/logo.PNG'%}">
+				<p>طراحی شده توسط web.ia</p>
+					</div>
+				<div class="footer-col-3">
+				<h3>لینک های پر کاربرد</h3>
+				<ul>
+					<li>صفحه اصلی</li>
+					<li>فروشگاه ما</li>
+					<li>درباره ما</li>
+					<li>راهنمای خرید و پیگیری سفارش</li>
+	
+	
+					</ul>
+					</div>
+				<div class="footer-col-4">
+				<h3>ما را در شبکه های اجتماعی دنبال کنید</h3>
+				<ul>
+					<li>اینستاگرام</li>
+					<li>تلگرام</li>
+					<li>واتس اپ</li>
+	
+	
+					</ul>
+					</div>
+			
+		</div>
+		<!__________js for toggle menu-------------->
+		<script>
+		var MenuItems=document.getElementById("MenuItems");
+			MenuItems.style.maxHeight="0px";
+			function menutoggle(){
+				if(MenuItems.style.maxHeight=="0px"){
+					MenuItems.style.maxHeight="200px"
+				}
+				else
+					{
+						MenuItems.style.maxHeight="0px";
+					}
+			}
+		</script>
+		
+		
+	</body>
+	</html>
+	
